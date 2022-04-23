@@ -36,7 +36,7 @@ function App() {
         <div
             className={`${
                 dark ? "bg-slate-800" : "bg-slate-400"
-            } container-full h-screen px-5 py-5 bg-slate-400`}
+            } container-full h-screen px-5 py-5`}
         >
             <Form
                 form={form}
