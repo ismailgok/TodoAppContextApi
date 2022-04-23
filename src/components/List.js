@@ -24,7 +24,7 @@ const List = ({ data, onClickDarkMode, dark }) => {
                 {data.map((item, index) => (
                     <li
                         key={index}
-                        className="px-2 rounded-sm w-1/2 cursor-pointer my-2 w-auto bg-sky-600 hover:bg-sky-700 p-1 list-none text-white font-medium"
+                        className="px-2 rounded-sm w-1/2 cursor-pointer my-2 bg-sky-600 hover:bg-sky-700 p-1 list-none text-white font-medium"
                     >
                         {item.name} {item.surname}
                     </li>
