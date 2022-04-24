@@ -13,6 +13,7 @@ const List = ({ data, onClickDarkMode, dark }) => {
                 >
                     List
                 </h1>
+                
                 <button
                     onClick={onClickDarkMode}
                     className="ml-36 bg-sky-800 hover:bg-sky-900 h-7 px-1 items-center justify-center px-py text-sm text-white rounded-md"
