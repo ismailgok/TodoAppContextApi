@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import React from 'react'
 import Container from './components/Container'
 import { ThemeContextProvider } from './components/Context/ThemeContext'
@@ -8,7 +8,7 @@ const App = () => {
         <Container />
     </ThemeContextProvider>
   )
-=======
+
 import Form from "./components/Form";
 import { useState, useEffect } from "react";
 import List from "./components/List";
@@ -58,7 +58,7 @@ function App() {
             <List data={data} onClickDarkMode={onClickDarkMode} dark={dark} />
         </div>
     );
->>>>>>> f2c1ac2ce6fa5490d2de477c78ab2fac4453395d
+
 }
 
 export default App
