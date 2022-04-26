@@ -1,12 +1,10 @@
-import React from "react";
+import { useContext } from "react";
+import ThemeContext from "./Context/ThemeContext";
 
-const Form = ({ form, onSubmitForm, onChangeInput, dark }) => {
+const Form = ({ form, onSubmitForm, onChangeInput }) => {
+    const { theme } = useContext(ThemeContext);
     return (
-        <div
-            className={`container my-1 ${
-                dark ? "bg-slate-800" : "bg-slate-400"
-            }`}
-        >
+        <div className={`${theme} mb-4`}>
             <input
                 className="border mr-1 px-1 rounded-sm"
                 placeholder="Name"
@@ -22,7 +20,7 @@ const Form = ({ form, onSubmitForm, onChangeInput, dark }) => {
                 onChange={onChangeInput}
             />
             <button
-                className="bg-white hover:bg-zinc-300 w-20 p-px"
+                className="bg-white hover:bg-zinc-300 w-20 p-px text-black"
                 onClick={onSubmitForm}
             >
                 Add
