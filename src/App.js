@@ -1,14 +1,4 @@
 
-import React from 'react'
-import Container from './components/Container'
-import { ThemeContextProvider } from './components/Context/ThemeContext'
-const App = () => {
-  return (
-    <ThemeContextProvider>
-        <Container />
-    </ThemeContextProvider>
-  )
-
 import Form from "./components/Form";
 import { useState, useEffect } from "react";
 import List from "./components/List";
